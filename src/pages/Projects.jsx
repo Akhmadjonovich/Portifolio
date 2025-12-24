@@ -1,38 +1,72 @@
 import HudPanel from "../components/HudPanel";
+import { motion } from "framer-motion";
 
 const projects = [
   {
-    name: "O'quv Markaz uchun CRM",
-    desc: "",
+    name: "CRM for Educational Centers",
+    desc: "The CRM system tailored for educational centers to manage students, courses, and payments efficiently.",
     link: "https://leaders-academy-tau.vercel.app/"
   },
   {
-    name: "Startup MVP",
-    desc: "Fast prototype systems for early startups",
+    name: "CRM for Marketplaces",
+    desc: "A comprehensive CRM solution designed for marketplaces to streamline vendor and customer interactions.",
   },
 ];
+
+const container = {
+  hidden: {},
+  show: {
+    transition: { staggerChildren: 0.2 },
+  },
+};
+
+const itemLeft = {
+  hidden: { opacity: 0, x: -50 },
+  show: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
+
+const itemRight = {
+  hidden: { opacity: 0, x: 50 },
+  show: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
 
 export default function Projects() {
   return (
     <section id="projects" className="py-24">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-2xl mb-10 tracking-widest text-green-400">
+        <h2 className="text-2xl mb-10 tracking-widest text-green-400 text-center">
           PROJECTS
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((p) => (
-            <HudPanel key={p.name} title={p.name}>
-              <p className="text-green-400/70 text-sm">
-                {p.desc}
-              </p>
+        <motion.div
+          className="grid md:grid-cols-2 gap-8"
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          {projects.map((p, index) => (
+            <motion.div
+              key={p.name}
+              variants={index % 2 === 0 ? itemLeft : itemRight}
+            >
+              <HudPanel title={p.name}>
+                <p className="text-green-400/70 text-sm">{p.desc}</p>
 
-              <button className="mt-6 text-sm text-green-400 border border-green-400/30 px-4 py-2 hover:border-green-400 transition">
-                VIEW PROJECT
-              </button>
-            </HudPanel>
+                {p.link && (
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-block text-sm text-green-400 border border-green-400/30 px-4 py-2 rounded hover:border-green-400 transition"
+                  >
+                    VIEW PROJECT
+                  </a>
+                )}
+              </HudPanel>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

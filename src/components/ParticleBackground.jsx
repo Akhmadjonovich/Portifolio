@@ -17,10 +17,13 @@ export default function ParticleBackground() {
       mouse.y = e.y;
     });
 
-    window.addEventListener("resize", () => {
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
-    });
+    const getParticleCount = () => {
+      const w = window.innerWidth;
+      if (w < 480) return 25;
+      if (w < 768) return 40;
+      if (w < 1024) return 70;
+      return 90;
+    };
 
     class Particle {
       constructor() {
@@ -42,11 +45,9 @@ export default function ParticleBackground() {
         this.x += this.vx;
         this.y += this.vy;
 
-        // devordan qaytish
         if (this.x < 0 || this.x > width) this.vx *= -1;
         if (this.y < 0 || this.y > height) this.vy *= -1;
 
-        // cursor qochish
         const dx = mouse.x - this.x;
         const dy = mouse.y - this.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
@@ -60,10 +61,23 @@ export default function ParticleBackground() {
       }
     }
 
-    const particles = [];
-    for (let i = 0; i < 90; i++) {
-      particles.push(new Particle());
-    }
+    let particles = [];
+
+    const initParticles = () => {
+      particles = [];
+      const count = getParticleCount();
+      for (let i = 0; i < count; i++) {
+        particles.push(new Particle());
+      }
+    };
+
+    initParticles();
+
+    window.addEventListener("resize", () => {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+      initParticles(); // resize bo‘lganda particle sonini yangilash
+    });
 
     function connect() {
       for (let a = 0; a < particles.length; a++) {

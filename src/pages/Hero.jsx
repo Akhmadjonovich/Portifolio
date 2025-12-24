@@ -32,7 +32,7 @@ export default function Hero() {
         <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
           <a
             href="#contact"
-            className="px-6 sm:px-8 py-2 sm:py-3 border border-green-400 text-green-400 hover:bg-green-400 hover:text-black rounded-lg font-medium transition-all duration-300 shadow-md hover:shadow-green-400/50 text-sm sm:text-base"
+            className="px-6  sm:px-8 py-2 sm:py-3 border border-green-400 text-green-400 hover:bg-green-400 hover:text-black rounded-lg font-medium transition-all duration-300 shadow-md hover:shadow-green-400/50 text-sm sm:text-base"
           >
             CONTACT
           </a>
