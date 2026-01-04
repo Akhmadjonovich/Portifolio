@@ -13,6 +13,22 @@ const projects = [
     desc: "A comprehensive CRM solution designed for marketplaces to streamline vendor and customer interactions.",
     link: "https://market-crm.vercel.app/"
   },
+  {
+    name: "AxroMarket",
+    desc: "A web SPA for posting and browsing gadget ads. Users can upload product images, filter by categories, and save favorites. Integrated with a Node.js & MongoDB backend for persistent data and image storage.",
+    link: "http://axromarket.vercel.app/"
+  },
+  {
+    name: "Health Recipe Finder",
+    desc: "A web-based SPA that helps users discover and filter healthy recipes made from fresh ingredients and quick to prepare. Built with modern frontend technologies to ensure a fast and responsive user experience.",
+    link: "https://last-exam-azure.vercel.app/"
+  },
+  {
+    name: "Image Finder & Generator",
+    desc: "Created a web where user can find and generate images by the input",
+    link: "https://img-finder-two.vercel.app/"
+  },
+
 ];
 
 const container = {
