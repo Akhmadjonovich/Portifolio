@@ -1,3 +1,4 @@
+import { link } from "framer-motion/client";
 import HudPanel from "../components/HudPanel";
 import { motion } from "framer-motion";
 
@@ -10,6 +11,7 @@ const projects = [
   {
     name: "CRM for Marketplaces",
     desc: "A comprehensive CRM solution designed for marketplaces to streamline vendor and customer interactions.",
+    link: "https://market-crm.vercel.app/"
   },
 ];
 
