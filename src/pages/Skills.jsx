@@ -7,7 +7,6 @@ const skillsData = [
   { name: "Tailwind CSS", level: 95 },
   { name: "Git", level: 85 },
   { name: "TypeScript", level: 70 },
-  { name: "Node.js", level: 70 },
   { name: "Next.js", level: 60 },
   { name: "Redux Toolkit", level: 60 },
   { name: "Framer Motion", level: 40 },
