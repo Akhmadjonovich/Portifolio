@@ -6,6 +6,8 @@ import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import Experience from "./pages/Experience";
+import Certificates from "./pages/Certificates";
 export default function App() {
   return (
     <>
@@ -15,7 +17,9 @@ export default function App() {
 
       <Hero />
       <Skills />
+      <Experience/>
       <Projects />
+      <Certificates/>
       <Contact />
     </>
   );

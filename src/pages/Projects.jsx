@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    name: "CRM for Educational Centers",
+    name: "ERP for Educational Centers",
     desc: "The CRM system tailored for educational centers to manage students, courses, and payments efficiently.",
     link: "https://leaders-academy-tau.vercel.app/"
   },
   {
-    name: "CRM for Marketplaces",
+    name: "CRM+ERP for Marketplaces",
     desc: "A comprehensive CRM solution designed for marketplaces to streamline vendor and customer interactions.",
     link: "https://market-crm.vercel.app/"
   },
@@ -52,7 +52,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-2xl mb-10 tracking-widest text-green-400 text-center">
+        <h2 className="text-2xl mb-10 max-sm:mb-0 tracking-widest text-green-400 text-center">
           PROJECTS
         </h2>
 
