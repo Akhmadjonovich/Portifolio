@@ -4,7 +4,9 @@ import NamePlate from "./NamePlate";
 const links = [
   { label: "<HOME/>", id: "home" },
   { label: "<SKILLS/>", id: "skills" },
+  { label: "<EXPERIENCES/>", id: "experience" },
   { label: "<PROJECTS/>", id: "projects" },
+  { label: "<CERTIFICATES/>", id: "certificates" },
   { label: "<CONTACT/>", id: "contact" },
 ];
 

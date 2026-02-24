@@ -12,7 +12,17 @@ export default function Experience() {
             "Collaborating with cross-functional teams to architect start-up projects from the ground up."
           ]
       },
-      // Kelajakda bu yerga boshqa tajribalarni qo'shishingiz mumkin
+      {
+        company: "AXROTECH (IT AGENCY)",
+        role: "Founder & Lead Developer",
+        period: "JAN 2024 - PRESENT", // O'zingizga mos sanani qo'ying
+        description: [
+          "Founded and scaled a digital agency providing web and app development solutions for businesses.",
+          "Architected and delivered high-performance web platforms using Next.js, TypeScript, and modern UI frameworks.",
+          "Managing full project lifecycles, from initial client discovery and requirement gathering to deployment and maintenance.",
+          "Leading a small team of developers/designers to ensure high-quality delivery and consistent brand growth."
+        ]
+      },
     ];
   
     return (

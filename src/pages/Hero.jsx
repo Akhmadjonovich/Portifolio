@@ -37,7 +37,7 @@ export default function Hero() {
             CONTACT
           </a>
           <a
-            href="/cv.pdf"
+            href="/Axrorbek-Ne'matov-FlowCV-Resume-20260224.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 sm:px-8 py-2 sm:py-3 border border-green-400/30 text-green-400/70 hover:border-green-400 hover:text-green-400 rounded-lg font-medium transition-all duration-300 text-sm sm:text-base"
