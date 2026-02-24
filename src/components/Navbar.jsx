@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import NamePlate from "./NamePlate";
 
+
 const links = [
   { label: "<HOME/>", id: "home" },
   { label: "<SKILLS/>", id: "skills" },
