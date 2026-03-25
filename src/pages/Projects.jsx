@@ -28,7 +28,11 @@ const projects = [
     desc: "Created a web where user can find and generate images by the input",
     link: "https://img-finder-two.vercel.app/"
   },
-
+  {
+    name: "Logistics Management System",
+    desc: "Built a role-based application for Manager and Driver roles, including route tracking, delivery management, and balance calculation via a manager dashboard.",
+    link: "" // Agar live demo yoki GitHub bo'lsa qo'shing
+  },
 ];
 
 const container = {
