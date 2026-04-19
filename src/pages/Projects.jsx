@@ -11,7 +11,6 @@ const projects = [
   {
     name: "CRM+ERP for Marketplaces",
     desc: "A comprehensive CRM solution designed for marketplaces to streamline vendor and customer interactions.",
-    link: "https://market-crm.vercel.app/"
   },
   {
     name: "AxroMarket",
@@ -22,11 +21,6 @@ const projects = [
     name: "Health Recipe Finder",
     desc: "A web-based SPA that helps users discover and filter healthy recipes made from fresh ingredients and quick to prepare. Built with modern frontend technologies to ensure a fast and responsive user experience.",
     link: "https://last-exam-azure.vercel.app/"
-  },
-  {
-    name: "Image Finder & Generator",
-    desc: "Created a web where user can find and generate images by the input",
-    link: "https://img-finder-two.vercel.app/"
   },
   {
     name: "Logistics Management System",
